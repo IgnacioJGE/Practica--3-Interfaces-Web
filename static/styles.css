@@ -1,0 +1,98 @@
+.center-profile{
+  flex: auto;
+  flex-direction: column;
+  
+}
+.personajes-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Distribuye los elementos uniformemente con espacios entre ellos */
+}
+.personajes-container {
+  width: 100%;
+  max-width: 1200px; /* Ajusta el ancho máximo según sea necesario */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  padding: 20px;
+}
+.perfil-container {
+  border: 2px solid transparent; /* Para mantener el espacio incluso si no hay foto */
+  border-radius: 10px;
+  background-color: red;
+  padding: 20px;
+  display: inline-block; /* Para que el contenedor solo ocupe el espacio necesario */
+}
+
+.button {
+  background-color: #4CAF50; /* Color de fondo verde */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 10px; /* Esquinas redondeadas */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Sombra */
+}
+
+.button:hover {
+  background-color: #45a049; /* Cambia el color de fondo al pasar el ratón */
+}
+
+.layout-container {
+  background-image: '/static/corazones.jpeg';
+  background-size: cover; /* Para cubrir todo el contenedor */
+  min-height: 100vh; /* Para ocupar al menos toda la altura de la pantalla */
+  display: flex;
+  flex-direction: column; /* Alinear elementos verticalmente */
+  align-items: center; /* Centrar elementos horizontalmente */
+  justify-content: top; /* Centrar elementos verticalmente */
+}
+
+/** CSS para los botones */
+.button-container {
+  display: flex; /* Alinear elementos en una misma línea */
+  margin-bottom: 20px; /* Espacio entre los botones y el contenido */
+}
+.forms-center {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.form-input {
+  margin-bottom: 10px;
+}
+
+.form-input input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-input input:focus {
+  outline: none;
+  border-color: #4CAF50; /* Cambia el color del borde cuando el input está enfocado */
+}
+
+.form-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+  background-color: #45a049; /* Cambia el color de fondo al pasar el ratón */
+}
+
+.form-error {
+  color: red;
+}
